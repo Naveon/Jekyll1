@@ -1,0 +1,84 @@
+
+.f-lock
+  max-width: 780px
+  +display(flex)
+  margin: 0 auto
+  +align-items(center)
+  +justify-content(space-between)
+
+  .f-img
+    +size(200px)
+    background: url( ../../../travitar.jpg   )
+    order: 3
+    border-radius: 40%
+
+  [class^="i-"]
+    +size(100px)
+    background: $bgcolor
+    border-radius: 30%
+    margin: 10px
+    &.i-pencil
+      order: 1
+    &.i-mouse
+      order: 2
+    &.i-browser
+      order: 4
+    &.i-video
+      order: 5
+
+@media screen and (max-width: 650px)
+  .f-lock
+    display: block
+    text-align: center
+
+    div
+      display: inline-block
+    .f-img
+      display: block
+      background-position: center center
+      width: auto
+      background-repeat: no-repeat
+      margin-bottom: 30px
+
+
+.blur
+  padding: 0 15px
+  max-width: 620px
+  margin: 50px auto
+  font-size: 24px
+  text-align: center
+  font-weight: 300
+
+.skill
+  max-width: 600px
+  margin: 100px auto
+  color: #2E2D33
+  +clearfix
+
+  .skill-unit
+    width: 300px
+    float: left
+
+  .skill-icons
+    font-size: 0px
+    margin: 0px 0 30px
+    span
+      display: inline-block
+      +size(14px)
+      background-color: $accent
+      margin-right: 5px
+      border-radius: 50%
+
+      &:after
+        content: ''
+        display: block
+        +size(10px)
+        background: #fff
+        border-radius: 50%
+        margin: 2px
+
+
+
+    @for $i from 1 through 10
+      &.skill-#{$i} span:nth-child(n+#{$i+1})
+        background: $bgcolor

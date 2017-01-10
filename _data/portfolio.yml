@@ -1,0 +1,46 @@
+# Portfolio settings
+title: Artist Theme
+description: Thinker// Designer// Youtuber
+email: artist@email
+
+
+# NOTE: The Logo and Background image are defined in the all.sass document.
+
+menu:
+- {name: About Me, url: '#about'}
+- {name: Work, url: '#work'}
+- {name: Clients, url: '#clients'}
+- {name: Contact, url: '#contact'}
+
+
+
+#-------------------------------
+# About Section
+
+# NOTE: The avatar is defined in the all.sass document.
+
+
+skills:
+- {name: Communication, value: '9'}
+- {name: Organization, value: '7'}
+- {name: Learning, value: '10'}
+- {name: Teaching, value: '6'}
+- {name: Planning, value: '7'}
+- {name: Visual Design, value: '5'}
+- {name: UX Design, value: '8'}
+- {name: Programming, value: '6'}
+
+
+#-------------------------------
+# Work Section
+
+projects:
+- {name: TYPO International Design Talks, folder: 'proj-1', file: 'work/proj-1.html'}
+- {name: City-IN website concept, folder: 'proj-2', file: 'work/proj-2.html'}
+- {name: Crispy Icons, folder: 'proj-3', file: 'work/proj-3.html'}
+- {name: Flat Mobile UI/UX Concept, folder: 'proj-4', file: 'work/proj-4.html'}
+- {name: Fresh It Up, folder: 'proj-5', file: 'work/proj-5.html'}
+- {name: Timeline Page, folder: 'proj-6', file: 'work/proj-6.html'}
+- {name: Weather Dashboard, folder: 'proj-7', file: 'work/proj-7.html'}
+- {name: Stripes & Co, folder: 'proj-8', file: 'work/proj-8.html'}
+

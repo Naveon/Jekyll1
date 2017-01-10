@@ -1,0 +1,13 @@
+<header id=header>
+    <div class="logo">{% include icons/logo.html %}</div>
+
+    <nav>
+        {% for item in site.data.portfolio.menu %}
+        <a href="{{ item.url }}">{{ item.name }}</a>
+        {% endfor %}
+    </nav>
+
+    <h1> <span> Artists Theme </span></h1>
+    <p class="kicker">Thinker// Designer// Youtuber</p>
+
+</header>
